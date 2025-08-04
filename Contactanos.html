@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagenes\icono\IconoMentalapp.ico" />
+    <title>MentalApp Contacto</title>
+    <link rel="stylesheet" href="EstiloMentalApp.css"/>
+    <link rel="stylesheet" href="animacionesMentalApp.css"/>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script> <!-- iconos de internet-->
+</head>
+
+<body>
+
+
+    <!-- inicio del header-->
+    <header>
+        <div class="contenedor_imagenheader">
+            <a href="Inicio.html"><img src="Imagenes\icono\LOGO PNG.png" alt="imagen MentalApp" width="120px"></a>
+        </div>
+
+            <div class="menu_header">
+                    <nav>
+                        <a href="#" class="enlace_header">Iniciar sesión</a>
+                        <a href="#" class="enlace_header">Registrate</a>
+                    </nav>
+            </div>
+        
+    </header>
+    <!-- fin del header-->
+
+    <hr>
+
+    
+
+
+            <!-- seccion de contactanos-->
+            <section class="secc_contactanos">
+                
+
+                <div>
+                    <h1>Contactanos</h1>
+                    <br>
+                    
+                    <h3>Deseas conocer más de nosotros?</h3>
+                    <br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem sequi, sit nisi labore qui iusto maiores rerum quos repellendus eaque eligendi harum velit ex debitis quas corrupti commodi laboriosam tempore.</p>
+                    <br>
+                    <a href="#"><i class="fa fa-phone"></i> +57 3163961378</a>
+                    <br>
+                    <br>
+                    <a href="#"><i class="fa fa-envelope"></i> email@tudominio.com</a>
+                    <br>
+                    
+
+                </div>
+
+
+
+                
+                
+                <form action=""> <!--action envia la informacion adonde se le diga-->
+                   
+                   <fieldset>
+                        <legend> <h3>Dejanos tus comentarios o dudas:</h3></legend>
+                    
+                        <br>
+                        <label><h4>Nombre:</h4></label>
+                        <input class="field" type="text" id="Nombre" placeholder="Tu nombre" name="Nombre" Value="" required> <!--para el servidor envia: name= nombre value=pepito-->
+                        <br><br>
+                        <label><h4>e-mail:</h4></label>
+                        <input class="field" type="email" placeholder="Tú e-mail" required>
+                        <br><br>
+                        <label><h4>Numero telefonico:</h4></label>
+                        <input class="field" type="number" placeholder="Tú numero de cel" required>
+                        <br><br>
+                        <label><h4>Ingresa tu mensaje:</h4></label>
+                        <textarea name="Descripcion" cols="100" rows="10"></textarea>
+                        <br><br>
+
+
+
+                        <input class="boton_1" type="submit">
+                        <br><br>
+
+                    </fieldset>
+                    
+                </form>
+            
+            </section>
+
+            <br><br>
+            <hr>
+
+          
+            <div id="map"></div>
+                
+            
+ 
+
+    
+
+        <footer>
+
+            <!--elemento 1 cuadrilla footer-->
+            <div class="contenedor_imagenfooter">
+                <a href="Inicio.html"><img src="Imagenes\icono\LOGO-NEGATIVO-BLANCO.png" alt="imagen MentalApp" width= "50px"></a>
+            </div>
+            
+
+
+            <!--elemento 2 cuadrilla footer-->
+            <div class="elem_2_footer">
+                <a href="" class="enlace_footer">Legal</a>
+                <a href="Contactanos.html" class="enlace_footer">Contactenos</a>          
+                <a href="Trabaja_con_nosotros.html" class="enlace_footer">Trabaja con nosotros</a>
+                <a href="Psicologo.html" class="enlace_footer">Psicologo</a> 
+            </div>
+     
+                            
+
+            <!--elemento 3 cuadrilla footer-->
+            <div class="elem_3_footer">
+                <a href="#"><img src="Imagenes\icono\facebook.png" alt="facebook" width="25px"></a>
+                <a target="_blank" href="https://www.instagram.com/psicologawendybecerra?igsh=MXRvY3Y2emZjNmg2dA=="><img src="Imagenes\icono\instagram.png" alt="instagram" width="25px"></a>
+                <a target="_blank" href="https://api.whatsapp.com/send/?phone=573168357924&text=Hola%21+%2AMentalApp%2A.+Necesito+agendar+una+cita+ya+mismo&type=phone_number&app_absent=0"><img src="Imagenes\icono\whatsapp.png" alt="whatsapp" width="25px"></a>
+                <div class="localizacion_footer"> 
+                    <a href="Contactanos.html"><img src="Imagenes\icono\marcador.png" alt="localización" width="25px"></a>
+                    <h6>carrera 33#47-44 <br>Centro comercial altamonte local 238 Bucaramanga - Santander - Colombia</h6>
+                </div>
+            </div>    
+
+           
+          
+
+        </footer>
+
+        <hr>
+        <h5 id="copyright">&copy;Desarrollado por: Rosemberg Ballesteros Alvarez 2024 - Todos los derechos reservados</h5>            
+        
+
+<script src="javascript/Mapa.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
+
+</body>
+
+
+
+</html>

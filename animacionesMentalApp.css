@@ -1,0 +1,37 @@
+/*animacion psicologos*/
+
+.slider{
+    width: 200px; /*tamaño imagen*/
+    overflow:hidden;
+}
+
+.slider ul{
+    display:flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 800px; /* debe ser 4 veces tamaño imagen(por que son 4 imagenes)*/
+    
+}
+
+.slider li{
+    list-style: none;
+}
+
+.slider img{
+    width: 200px;
+    border-radius: 6px;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -200px;}
+    45%{margin-left: -200px;}
+
+    50%{margin-left: -400px;}
+    70%{margin-left: -400px;}
+
+    75%{margin-left: -600px;}
+    100%{margin-left: -600px;}
+}
+/*fin animacion psicologos*/

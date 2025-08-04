@@ -1,0 +1,306 @@
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('estilo_letra/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Quicksand';
+}
+
+/*solo para la pagina de contactenos */
+.secc_contactanos{  
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+
+.texto_centrado{
+    text-align: center;
+}
+
+/*tamaño de textos */
+h1{
+    line-height: 32px;
+    color: rgb(76,72,255)
+}
+
+h2{
+    line-height: 24px;
+    text-align: center;
+    color: rgb(125,195,69)
+}
+
+h3{
+    line-height: 20px;
+    color: rgb(0, 0, 0)
+}
+
+h4{
+    line-height: 16px;
+    color: rgb(0, 0, 0)
+}
+
+/*fin tamaño de textos */
+
+
+
+.bodyinicio{
+    background-image: url('#');
+}
+
+
+
+
+/*formularios*/
+/*formularios*/
+
+fieldset{
+    padding: 0px 0px 0px 20px;  /*espacio dentro de los formularios*/
+}
+
+.field{
+    border: solid 1px rgb(117, 117, 121);
+    width: 300px;
+}
+
+.field:focus{
+    border-color: rgb(76,72,255); /*espacio dentro de los formularios*/
+}
+
+
+/*fin formularios*/
+/*fin formularios*/
+
+
+
+
+
+hr{
+    width: 100%;
+    height: 3px;                         /*modificamos la linea de separacion*/
+    background: rgb(76,72,255);
+}
+
+p{
+    text-justify:distribute;
+    font-size: 14px;
+}
+
+
+/*configuracion de boton 1 */
+.boton_1{
+ background-color: rgb(125,195,69);
+ border: 10px;
+ padding: 10px 10px;
+ border-radius: 8px;
+ text-align:center ;
+ color:white;
+ cursor: pointer;
+ font-size: 16px;
+ font-weight: bold;
+ }
+
+.boton_1:hover{
+background-color: rgb(125,195,69);
+border: 10px;
+padding: 10px 10px;
+border-radius: 8px;
+text-align:center ;
+color:rgb(76,72,255);
+cursor: pointer;
+font-size: 16px;
+font-weight: bold;
+ }
+/*fin configuracion de boton 1 */
+
+img{
+max-width: 100%;
+display:block;
+}
+
+.imgservicios{
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-right: 3px solid rgb(125,195,69);   /*hace que el video quede a la izquierda*/
+    padding-right: 20px;
+}
+
+
+video{
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-right: 3px solid rgb(125,195,69);   /*hace que el video quede a la izquierda*/
+    padding-right: 20px;
+}
+
+header{
+    padding: 5px 0px 5px 5px;
+    display: inline-flex;        /*Para que la imagen salga al frente de iniciar sesion y registrate*/
+    }
+
+legend{
+        text-align: center;
+    }
+
+
+
+.menu_header{
+    background-color: rgb(125,195,69);
+    width: 230px;
+    height: 68px;
+    border-radius: 0%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+/*estilo para los enlaces del header*/
+
+
+a.enlace_header{
+    position:relative;
+    top:22px;                          /*mueve las letras Iniciar sesión y registrate hacia abajo o hacia arriba*/
+    padding: 0px 15px 0px 10px;       /*Para dar espacio al iniciar sesion y al registrese*/
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+.enlace_header:hover{
+    color:rgb(76,72,255);
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+
+/*fin de header*/
+/*fin de header*/
+/*fin de header*/
+
+
+.secc_pag_inicio{
+    justify-items: center;
+    text-align: justify;
+    min-width: 480px ;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.talento_h{
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+}
+
+
+a.enlaceT1{
+    color: rgba(76, 72, 255);
+    font-weight: bold;
+    }
+
+.enlaceT1:hover{
+        color:rgb(125,195,69);
+        font-weight: bold;
+    }
+
+
+
+
+
+
+/*fin contenido pagina*/
+/*fin contenido pagina*/
+/*fin contenido pagina*/
+
+
+
+footer{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;  /* creo tres columnas para la regrilla del footer*/
+    gap: 0px 0px;
+    }
+
+    .contenedor_imagenfooter{
+        background-color: rgb(76,72,255); /*fondo imagen footer*/
+        padding: 5px 10px 5px 5px;
+        justify-items: end;
+    }
+
+    .elem_2_footer{
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        justify-items: center;
+    }
+
+
+    .elem_3_footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: auto;
+        gap: 0px 10px;
+    }
+
+
+    .localizacion_footer{
+        grid-column: 1 / span 3;
+        display: flex;
+        justify-items: center;
+    }
+
+
+
+
+
+/*estilo para los enlaces del footer*/
+
+
+.enlace_footer{
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+
+}
+
+a.enlace_footer{
+        color: rgba(76, 72, 255);
+        font-size: 15px;
+        font-weight: bold;
+        }
+    
+.enlace_footer:hover{
+            color:rgb(125,195,69);
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+
+
+
+
+
+#copyright{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
